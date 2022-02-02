@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./home.css">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav>
+        <div class='logo'>
+            <div><img src="./logo-image.png" class="mainLogo"></div>
+            <div>Bewell</div>
+        </div>
+        <div class='link-box'>
+
+            <div class='link-item'>
+                <div class='link'>Home</div>
+                <a href="#" class="link-icon"><i class="fas fa-home"></i></a>
+            </div>
+
+            <div class='link-item'>
+                <div class='link'>Games</div>
+                <a href="#" class="link-icon"><i class="fas fa-gamepad"></i></a>
+            </div>
+
+            <div class='link-item'>
+                <div class='link'>Admin</div>
+                <a href="#" class="link-icon"><i class="fas fa-user-alt"></i></a>
+            </div>
+
+            <div class='link-item'>
+                <div class='link'>Contact</div>
+                <a href="#" class="link-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+
+        </div>
+        <div class='mob-box'>
+            <div class='mob-icon'>
+                <i class="fas fa-bars bar"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar ends -->
+
+
+        <!-- banner section -->
+        <header class="container-fluid">
+            <div class="banner-center text-center">
+                <h1>
+                    <strong>Affordable, private therapy</strong>
+                </h1>
+                <p class="lead " style="color:#ddf093;">Talk with a licensed, professional therapist online</p>
+                <button class="btn" style="margin-top: 15px;">Get started</button>
+        </header>
+        <!-- banner scetion end -->
+    
+    <script>
+        // Navbar JS start
+        let bar = document.querySelector('.mob-box');
+        let mobLinks = document.querySelector('.link-box')
+        bar.onclick = () => {
+            mobLinks.classList.toggle('active');
+        }
+        // Navbar JS ends
+    </script>
+</body>
+
+</html>

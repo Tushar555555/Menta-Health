@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #d0edf0;
+}
+
+/* Navbar start */
+
+nav {
+
+    width: 90%;
+    border-radius: 5px;
+    margin: 20px auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 19px;
+    background: #d0edf0;
+    box-shadow: 5px 5px 10px #b7d1d3,
+        -5px -5px 10px #e9ffff;
+    padding: 1rem 2vw;
+    position: relative;
+}
+
+nav .logo {
+    color: #365A5E;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .logo .mainLogo {
+    height: 80px;
+}
+
+nav .link-box {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+nav .link-item {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 7px 18px;
+}
+
+nav .link-item:hover {
+    background: linear-gradient(145deg, #bbd5d8, #dffeff);
+    box-shadow: 5px 5px 10px #b7d1d3,
+        -5px -5px 10px #e9ffff;
+}
+
+nav .link-item:hover>.link {
+    transform: translateY(-100px);
+
+}
+
+nav .link-item:hover>.link-icon {
+    transform: translateY(-10px);
+}
+
+.link {
+    transform: translateY(9px);
+    transition: 0.5s ease;
+    color: #365A5E
+}
+
+.link-icon {
+    transform: translateY(-50px);
+    transition: 0.5s ease;
+    font-size: 20px;
+    color: #365A5E;
+
+}
+
+.mob-box {
+    background: #8fe1eb;
+    padding: 7px 18px;
+    height: 58px;
+    width: 78px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.mob-box .mob-icon .bar {
+    color: white;
+    font-size: 28px;
+}
+
+.active {
+
+    display: flex !important;
+}
+
+@media(max-width:630px) {
+
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav .mob-box {
+        display: flex;
+    }
+
+    nav .link-box {
+        position: absolute;
+        border-radius: 5px;
+        flex-direction: column;
+        display: none;
+        top: 100px;
+        width: 100%;
+        left: 0;
+        border-radius: 19px;
+        background: linear-gradient(145deg, #dffeff, #bbd5d8);
+        box-shadow: 5px 5px 10px #b7d1d3,
+            -5px -5px 10px #e9ffff;
+    }
+
+    nav .link-box .link-item {
+        border-radius: 0;
+    }
+}
+
+@media(min-width:630px) {
+
+
+    nav .link-box {
+        display: flex !important;
+    }
+
+    .score {
+        display: none;
+        color: #00ff2a;
+        padding: 15px;
+        width: 45px;
+        height: 25px;
+        margin: 45px auto;
+        text-align: center;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background: white;
+    }
+
+    .about-me {
+
+        border-radius: 5px;
+        width: 300px;
+        margin: 55px auto;
+        color: white;
+        text-align: center;
+        background: #ffff;
+        padding: 7px 18px;
+    }
+}
+
+/* Navbar ends */
+
+
+
+/* banner starts */
+header{
+    height: 75vh;
+    background:linear-gradient(to top, rgba(0,0,0,0.7),rgba(0,0,0,0.2)), url(./HomePage-Banner.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+   }
+   
+   .banner-center{
+    height: 55vh;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 100px;
+    align-items: center;
+   }
+   
+   .banner-center h1{
+    font-size: 3.5rem;
+   }
+   
+   .banner-center p{
+   font-size: 1.5rem;
+   }
+   .btn {
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #3498db;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+  }
+  
+  .btn:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+  }
+   
+   /* banner end */
