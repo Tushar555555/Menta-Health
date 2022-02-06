@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #d0edf0;
+    background: floralwhite;
 }
 
 /* Navbar start */
@@ -19,7 +19,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     border-radius: 19px;
-    background: #d0edf0;
+    background: floralwhite;
     box-shadow: 5px 5px 10px #b7d1d3,
         -5px -5px 10px #e9ffff;
     padding: 1rem 2vw;
@@ -415,7 +415,7 @@ header{
    .footer {
     position: relative;
     width: 100%;
-    background: #8be1eb;
+    background: #365A5;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
